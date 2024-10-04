@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "admarenTask"
+    }
+  },
+  "defaultProject": "admarenTask",
+  "cli": {
+    "analytics": "0ac2fb70-abaf-4c85-b4a6-32ba10472dc1"
+  }
 }

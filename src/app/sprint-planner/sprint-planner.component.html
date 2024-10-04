@@ -1,0 +1,24 @@
+<div class="container">
+
+
+<div class="row mt-4">
+<div class="col-6">
+        <h5>Add New Story</h5>
+<app-story-form (addStory)="updateStoryList($event)"></app-story-form>
+</div>
+<div class="col-6">
+    <app-story-list  [storyList]="storyList" ></app-story-list>
+</div>
+</div>
+
+<div class="row mt-4">
+<div class="col-6">
+<app-sprint-control (autoSelectedStories)="updateSelectedStories($event)" [stories]="storyList"
+(clearSelectedStories)="clearAll()"></app-sprint-control>
+</div>
+<div class="col-6">
+    <app-sprint-selected-stories [selectedStories]="selectedStories" ></app-sprint-selected-stories>
+    </div>
+</div>
+
+</div>

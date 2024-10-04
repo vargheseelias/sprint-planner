@@ -1,0 +1,14 @@
+<h5>Sprint Calculator</h5>
+<div class="p-4 border rounded shadow-sm bg-light mt-4">
+    <div class="form-group mb-3">
+      <label for="targetPoints" class="form-label">Target Sprint Points</label>
+      <input id="targetPoints" [(ngModel)]="targetPoints" type="number" class="form-control" placeholder="Set target sprint points" />
+    </div>
+  
+    <div class="d-flex gap-2">
+      <button class="btn btn-success" (click)="autoSelectStories()">Auto select stories</button>
+      <button class="btn btn-warning" (click)="clearAllStories()">Clear stories</button>
+      <button class="btn btn-danger" (click)="clearSelected()">Clear selected stories</button>
+    </div>
+  </div>
+  
